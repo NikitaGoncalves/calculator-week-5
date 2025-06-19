@@ -1,0 +1,67 @@
+/* Make the page fill the entire screen */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Calculator container */
+.calculator {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Display at the top */
+#inputbox {
+  height: 20%;
+  width: 100%;
+  background-color: #2e2e2e;
+  color: white;
+  font-size: 64px;
+  text-align: right;
+  padding: 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* Each row of buttons */
+.row {
+  display: flex;
+  flex: 1;
+}
+
+/* All buttons */
+.btn {
+  flex: 1;
+  font-size: 28px;
+  color: white;
+  background-color: #555;
+  border: none;
+  outline: none;
+}
+
+/* Gray number buttons */
+.gray {
+  background-color: #555;
+}
+
+/* Orange operator buttons */
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+/* Equal button fills full width */
+.equal {
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+}
+
